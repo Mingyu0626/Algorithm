@@ -61,24 +61,20 @@ void bfs(int a, int b, int r)
 	visited[a][b] = true;
 	while (!q.empty())
 	{
-		int qSize = q.size();
-		for (int i = 0; i < qSize; i++)
-		{
-			int x = q.front().first;
-			int y = q.front().second;
-			q.pop();
+		int x = q.front().first;
+		int y = q.front().second;
+		q.pop();
 
-			for (int j = 0; j < 4; j++)
+		for (int j = 0; j < 4; j++)
+		{
+			int newX = x + dx[j];
+			int newY = y + dy[j];
+			if (newX < 0 || n <= newX || newY < 0 || n <= newY)
+				continue;
+			if (v[newX][newY] > r && !visited[newX][newY])
 			{
-				int newX = x + dx[j];
-				int newY = y + dy[j];
-				if (newX < 0 || n <= newX || newY < 0 || n <= newY) 
-					continue;
-				if (v[newX][newY] > r && !visited[newX][newY])
-				{
-					q.push({ newX, newY });
-					visited[newX][newY] = true;
-				}
+				q.push({ newX, newY });
+				visited[newX][newY] = true;
 			}
 		}
 	}
