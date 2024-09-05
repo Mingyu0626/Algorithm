@@ -28,12 +28,7 @@ int main() {
 	sort(low, low + 3);
 	
 	if (n == 1) result = sum - maxNum;
-	if (n == 2)
-	{
-		result = 4 * (low[0] + low[1]) +
-			4 * (low[0] + low[1] + low[2]);
-	}
-	if (n > 2)
+	if (n > 1)
 	{
 		num[0] = (n - 2) * (n - 2) * 5 + (n - 2) * 4;
 		num[1] = 4 + (4 * (n - 2) * 2);
