@@ -36,7 +36,7 @@ int main() {
 				break;
 			}
 		}
-		if (!dekimasuka) cout << "Goldbach's conjecture is wrong.\n";
+		if (!dekimasuka) exit(0);
 	}
 	return 0;
 }
