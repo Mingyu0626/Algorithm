@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
-#include <unordered_set>
+#include <set>
 
 using namespace std;
 
@@ -19,16 +19,9 @@ int main() {
 
 	for (int i = v[0].size() - 1; i >= 0; i--)
 	{
-		bool allDiff = true;
-		unordered_set<int> us;
-		for (int j = 0; j < n; j++)
-		{
-			string s = v[j].substr(i);
-			int a = stoi(s);
-			if (us.find(a) == us.end()) us.insert(a);
-			else allDiff = false;
-		}
-		if (allDiff) break;
+		set<string> s;
+		for (int j = 0; j < n; j++) s.insert(v[j].substr(i));
+		if (s.size() == n) break;
 		result++;
 	}
 	cout << result;
