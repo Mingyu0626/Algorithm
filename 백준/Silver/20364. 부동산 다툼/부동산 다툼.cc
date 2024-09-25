@@ -5,9 +5,8 @@
 
 using namespace std;
 
-int n, q, duck, result;
+int n, q, duck, last;
 vector<bool> visited;
-vector<int> v;
 void go(int d);
 
 int main()
@@ -19,17 +18,16 @@ int main()
     for (int i = 0; i < q; i++)
     {
         cin >> duck;
+        last = 0;
         go(duck);
-        if (v.size() == 0) cout << 0 << '\n';
-        else cout << v[v.size() - 1] << '\n';
+        cout << last << '\n';
         visited[duck] = true;
-        v.clear();
     }
     return 0;
 }
 
 void go(int d)
 {
-    if (visited[d]) v.push_back(d);
+    if (visited[d]) last = d;
     if (d > 1) go(d / 2);
 }
