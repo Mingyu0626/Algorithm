@@ -29,7 +29,6 @@ int main() {
 		}
 		result = min({ result, dp[n][(i + 1) % 3], dp[n][(i + 2) % 3] });
 	}
-
 	cout << result;
 	return 0;
 }
