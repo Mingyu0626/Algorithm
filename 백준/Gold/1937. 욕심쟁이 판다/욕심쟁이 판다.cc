@@ -6,7 +6,7 @@
 using namespace std;
 
 int n, result;
-vector<vector<int>> v, dp;
+int v[501][501], dp[501][501];
 
 int dx[4] = { 0, 0, -1, 1 };
 int dy[4] = { 1, -1, 0, 0 };
@@ -18,38 +18,27 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n;
-    v.assign(n, vector<int>(n));
-    dp.assign(n, vector<int>(n, 1));
+    for (int i = 0; i <= 500; i++) fill_n(dp[i], 501, 1);
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++) cin >> v[i][j];
 
     for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if (dp[i][j] == 1)
-            {
-                dfs(i, j);
-            }
-            result = max(result, dp[i][j]);
-        }
-    }
+        for (int j = 0; j < n; j++) result = max(result, dfs(i, j));
+        
     cout << result;
 }
 
 int dfs(int x, int y)
 {
+    if (dp[x][y] != 1) return dp[x][y];
+
     int moveNum = 1;
-    int curVal = v[x][y];
     for (int i = 0; i < 4; i++)
     {
-        int newX = x + dx[i];
-        int newY = y + dy[i];
+        int newX = x + dx[i], newY = y + dy[i];
         if (newX < 0 || n <= newX || newY < 0 || n <= newY) continue;
 
-        int newVal = v[newX][newY];
-
-        if (curVal < newVal)
+        if (v[x][y] < v[newX][newY])
         {
             if (dp[newX][newY] != 1)
             {
@@ -57,10 +46,10 @@ int dfs(int x, int y)
             }
             else
             {
-                moveNum = max(moveNum, dfs(newX, newY));
+                moveNum = max(moveNum, dfs(newX, newY) + 1);
             }
         }
     }
     dp[x][y] = moveNum;
-    return moveNum + 1;
+    return moveNum;
 }
