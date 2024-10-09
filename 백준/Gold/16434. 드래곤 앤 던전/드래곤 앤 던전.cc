@@ -40,7 +40,7 @@ int main()
                 if (playerCurHP > receivedDamage) playerCurHP -= receivedDamage;
                 else
                 {
-                    playerMaxHP = (playerMaxHP - playerCurHP) + receivedDamage + 1;
+                    playerMaxHP += (receivedDamage - playerCurHP) + 1;
                     playerCurHP = 1;
                 }
             }
