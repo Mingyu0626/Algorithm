@@ -25,7 +25,7 @@ int main()
                 s.pop();
             }
             reverse(strComp.begin(), strComp.end());
-            if (strComp.compare(b) != 0)
+            if (strComp != b)
             {
                 for (int j = 0; j < strComp.size(); j++)
                 {
