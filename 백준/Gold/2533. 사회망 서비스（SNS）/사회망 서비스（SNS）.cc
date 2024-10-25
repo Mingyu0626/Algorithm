@@ -1,16 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
-#include <cmath>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <set>
-#include <unordered_set>
-#include <map>
-#include <unordered_map>
-#include <limits.h>
 
 using namespace std;
 
