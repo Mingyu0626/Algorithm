@@ -4,8 +4,6 @@
 
 using namespace std;
 
-int n;
-
 struct BaseInformation
 {
     int first = 0;
@@ -36,7 +34,7 @@ public:
     int playBall(const vector<vector<int>>& atBatInfo)
     {
         int score = 0, curBatter = 1;
-        for (int i = 1; i <= n; i++) // i회 공격
+        for (int i = 1; i <= atBatInfo[0].size() - 1; i++) // i회 공격
         {
             int outCount = 0;
             initBase();
@@ -102,8 +100,8 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
+    int n;
     cin >> n;
-    BaseBallManager bm;
     vector<vector<int>> atBat(10, vector<int>(n + 1, 0));
     for (int i = 1; i <= n; i++)
     {
@@ -112,6 +110,7 @@ int main()
             cin >> atBat[j][i];
         }
     }
+    BaseBallManager bm;
     cout << bm.makeLineup(atBat);
     return 0;
 }
