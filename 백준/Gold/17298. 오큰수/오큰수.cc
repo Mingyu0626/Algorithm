@@ -13,28 +13,21 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n;
-    v.assign(n, 0), result.assign(n, 0);
+    v.assign(n, 0), result.assign(n, -1);
     for (int i = 0; i < n; i++) cin >> v[i];
     
-    result[n - 1] = -1;
-    s.push(v[n - 1]);
-    for (int i = n - 2; i >= 0; i--)
+    for (int i = n - 1; i >= 0; i--)
     {
         while (!s.empty())
         {
             if (v[i] < s.top())
             {
                 result[i] = s.top();
-                s.push(v[i]);
                 break;
             }
             else s.pop();
         }
-        if (s.empty())
-        {
-            result[i] = -1;
-            s.push(v[i]);
-        }
+        s.push(v[i]);
     }
 
     for (int i = 0; i < n; i++) cout << result[i] << ' ';
