@@ -1,35 +1,32 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
-#include <cmath>
 
 using namespace std;
 
-int n, m;
+int s, p, l, r, m;
 vector<int> v;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
-    cin >> n >> m;
-    v.assign(n, 0);
-    int l = 0, r = 0, mid = 0;
-    for (int i = 0; i < n; i++)
+    cin >> s >> p;
+    v.assign(s, 0);
+    for (int i = 0; i < s; i++)
     {
         cin >> v[i];
-        l = max(l, v[i]);
+        l = max(v[i], l);
         r += v[i];
     }
-    
+
     while (l <= r)
     {
-        mid = (l - r) / 2 + r;
-        int sum = 0, cnt = 1;
-        for (int i = 0; i < n; i++)
+        m = (r - l) / 2 + l;
+        int cnt = 1, sum = 0;
+        for (int i = 0; i < s; i++)
         {
-            if (sum + v[i] <= mid)
+            if (sum + v[i] <= m)
             {
                 sum += v[i];
             }
@@ -38,10 +35,15 @@ int main()
                 sum = v[i];
                 cnt++;
             }
-
         }
-        if (cnt <= m) r = mid - 1;
-        else l = mid + 1;
+        if (p < cnt)
+        {
+            l = m + 1;
+        }
+        else
+        {
+            r = m - 1;
+        }
     }
     cout << l;
     return 0;
