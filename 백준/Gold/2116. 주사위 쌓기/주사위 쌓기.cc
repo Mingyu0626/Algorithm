@@ -6,9 +6,7 @@ using namespace std;
 
 int n, result;
 vector<vector<int>> dice;
-int topBottom[6] = { 5, 3, 4, 1, 2, 0 };
-// (0, 5), (1, 3), (2, 4)
-
+int topBottom[6] = { 5, 3, 4, 1, 2, 0 }; // (0, 5), (1, 3), (2, 4)
 
 int main()
 {
