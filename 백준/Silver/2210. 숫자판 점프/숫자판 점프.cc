@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <string>
 #include <unordered_set>
 
@@ -9,7 +8,6 @@ using namespace std;
 int result;
 unordered_set<string> us;
 vector<vector<char>> v(5, vector<char>(5));
-vector<vector<bool>> visited(5, vector<bool>(5));
 int dx[4] = { 0, 0, 1, -1 }, dy[4] = { 1, -1, 0, 0 };
 
 void dfs(int x, int y, string s);
