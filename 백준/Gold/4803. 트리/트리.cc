@@ -34,7 +34,6 @@ int main()
                 result++;
             }
         }
-
         cout << "Case " << t << ": ";
         if (result == 0) cout << "No trees.\n";
         else if (result == 1) cout << "There is one tree.\n";
@@ -53,7 +52,6 @@ void Union(int a, int b)
 {
     a = GetRoot(a);
     b = GetRoot(b);
-
     if (a != b)
     {
         if (a < b) parent[b] = a;
