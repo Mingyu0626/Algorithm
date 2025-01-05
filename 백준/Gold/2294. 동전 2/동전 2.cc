@@ -16,7 +16,6 @@ int main()
     dp[0] = 0;
     for (int i = 0; i < n; i++) cin >> v[i];
 
-    sort(v.begin(), v.end());
     for (int i = 0; i < n; i++)
     {
         if (k < v[i]) continue;
