@@ -7,7 +7,13 @@ using namespace std;
 int n, m, k, num, result;
 vector<bool> hasPlant;
 vector<int> root;
-vector<pair<int, pair<int, int>>> edges;
+struct edge
+{
+    int s;
+    int e;
+    int cost;
+};
+vector<edge> edges;
 
 int getRoot(int a);
 void Union(const int a, const int b);
@@ -36,15 +42,17 @@ int main()
     for (int i = 0; i < m; i++)
     {
         cin >> u >> v >> w;
-        edges.push_back({ w, { u, v } });
+        edges.push_back({u, v, w});
     }
-    sort(edges.begin(), edges.end());
+    sort(edges.begin(), edges.end(), 
+        [](const edge& a, const edge& b)
+        { return a.cost < b.cost; });
 
     for (int i = 0; i < edges.size(); i++)
     {
-        int cost = edges[i].first;
-        int a = edges[i].second.first;
-        int b = edges[i].second.second;
+        int a = edges[i].s;
+        int b = edges[i].e;
+        int cost = edges[i].cost;
         if (!hasTwoPlants(a, b) && !isSameRoot(a, b))
         {
             Union(a, b);
