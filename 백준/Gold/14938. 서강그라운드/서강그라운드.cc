@@ -7,7 +7,7 @@ using namespace std;
 
 int n, m, r;
 vector<int> d, item;
-vector<pair<int, int>> edge[1001];
+vector<pair<int, int>> edge[101];
 
 int dijkstra(int startNode);
 
