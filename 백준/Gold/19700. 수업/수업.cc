@@ -5,6 +5,11 @@
 
 using namespace std; 
 
+struct studentInfo
+{
+    int h;
+    int k;
+};
 
 int main()
 {
@@ -12,15 +17,19 @@ int main()
     cin.tie(0); cout.tie(0);
     int n;
     cin >> n;
-    vector<pair<int, int>> v(n);
-    for (int i = 0; i < n; i++) cin >> v[i].first >> v[i].second;
+    vector<studentInfo> v(n);
+    for (int i = 0; i < n; i++) cin >> v[i].h >> v[i].k;
     
-    sort(v.begin(), v.end(), greater<pair<int, int>>());
+    sort(v.begin(), v.end(), 
+        [](const studentInfo& a, const studentInfo& b)
+        {
+            return a.h > b.h;
+        });
 
     multiset<int> ms;
     for (int i = 0; i < n; i++)
     {
-        auto it = ms.lower_bound(-v[i].second + 1);
+        auto it = ms.lower_bound(-v[i].k + 1);
         if (it != ms.end())
         {
             int cur = *it;
