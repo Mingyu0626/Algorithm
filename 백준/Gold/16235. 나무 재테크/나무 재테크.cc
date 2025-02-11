@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <queue>
 
 using namespace std;
 
@@ -9,7 +8,7 @@ int n, m, k, treeCount;
 
 struct fieldInfo
 {
-    priority_queue<int, vector<int>, greater<int>> pq;
+    vector<int> aliveTrees;
     int nutrition = 5;
     int deathTreeNutrition = 0;
     int breedTreeCount = 0;
@@ -18,21 +17,25 @@ struct fieldInfo
 using Dim2FieldInfo = vector<vector<fieldInfo>>;
 
 
-void springGrowthTree(Dim2FieldInfo& f)
+void spring(Dim2FieldInfo& f)
 {
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= n; j++)
         {
             vector<int> growthSucceedTrees;
-            while (!f[i][j].pq.empty())
+            sort(f[i][j].aliveTrees.begin(), f[i][j].aliveTrees.end());
+            for (auto& a : f[i][j].aliveTrees)
             {
-                int curTreeAge = f[i][j].pq.top();
-                f[i][j].pq.pop();
+                int curTreeAge = a;
                 if (curTreeAge <= f[i][j].nutrition)
                 {
                     growthSucceedTrees.emplace_back(curTreeAge + 1);
                     f[i][j].nutrition -= curTreeAge;
+                    if ((curTreeAge + 1) % 5 == 0)
+                    {
+                        f[i][j].breedTreeCount++;
+                    }
                 }
                 else
                 {
@@ -40,19 +43,16 @@ void springGrowthTree(Dim2FieldInfo& f)
                     treeCount--;
                 }
             }
+            f[i][j].aliveTrees.clear();
             for (auto& a : growthSucceedTrees)
             {
-                f[i][j].pq.push(a);
-                if (a % 5 == 0)
-                {
-                    f[i][j].breedTreeCount++;
-                }
+                f[i][j].aliveTrees.push_back(a);
             }
         }
     }
 }
 
-void summerTurnTreeIntoNutrition(Dim2FieldInfo& f)
+void summer(Dim2FieldInfo& f)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -64,7 +64,7 @@ void summerTurnTreeIntoNutrition(Dim2FieldInfo& f)
     }
 }
 
-void autumnBreedTree(Dim2FieldInfo& f)
+void autumn(Dim2FieldInfo& f)
 {
     int dr[8] = { 1, 1, 1, -1, -1, -1, 0, 0 };
     int dc[8] = { 0, -1, 1, 0, -1, 1, -1, 1 };
@@ -84,7 +84,7 @@ void autumnBreedTree(Dim2FieldInfo& f)
                         int cnt = f[i][j].breedTreeCount;
                         while (0 < cnt--)
                         {
-                            f[newR][newC].pq.push(1);
+                            f[newR][newC].aliveTrees.push_back(1);
                             treeCount++;
                         }
                     }
@@ -95,7 +95,7 @@ void autumnBreedTree(Dim2FieldInfo& f)
     }
 }
 
-void winterAddNutrition(Dim2FieldInfo& f)
+void winter(Dim2FieldInfo& f)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -120,15 +120,15 @@ int main()
     for (int i = 0; i < m; i++)
     {
         cin >> x >> y >> z;
-        field[x][y].pq.push(z);
+        field[x][y].aliveTrees.push_back(z);
     }
 
     while (0 < k--)
     {
-        springGrowthTree(field);
-        summerTurnTreeIntoNutrition(field);
-        autumnBreedTree(field);
-        winterAddNutrition(field);
+        spring(field);
+        summer(field);
+        autumn(field);
+        winter(field);
     }
 
     cout << treeCount;
