@@ -12,35 +12,18 @@ int main()
     string s;
     cin >> n >> k >> s;
 
-    vector<bool> eated(n, false);
     int result = 0;
     for (int i = 0; i < n; i++)
     {
         if (s[i] == 'P')
         {
-            bool canEat = false;
-            int leftIdx = max(i - k, 0);
-            for (int j = leftIdx; j < i; j++)
+            for (int j = max(i - k, 0); j <= i + k && j < n; j++)
             {
-                if (s[j] == 'H' && !eated[j])
+                if (s[j] == 'H')
                 {
-                    eated[j] = true;
-                    canEat = true;
+                    s[j] = '0';
                     result++;
                     break;
-                }
-            }
-
-            if (!canEat)
-            {
-                for (int j = i + 1; j < n && j <= i + k; j++)
-                {
-                    if (s[j] == 'H' && !eated[j])
-                    {
-                        eated[j] = true;
-                        result++;
-                        break;
-                    }
                 }
             }
         }
