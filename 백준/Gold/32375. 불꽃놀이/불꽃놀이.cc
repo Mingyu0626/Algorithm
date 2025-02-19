@@ -4,8 +4,8 @@
 
 using namespace std;
 
-int n, k, cur;
-vector<int> result, v;
+int n, k, cur, result;
+vector<int> v;
 
 int main()
 {
@@ -15,8 +15,8 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> cur;
-        if (k <= cur) result.push_back(cur);
-        else v.push_back(cur);
+        if (k <= cur) result++;
+        else v.emplace_back(cur);
     }
     sort(v.begin(), v.end());
 
@@ -26,13 +26,11 @@ int main()
         int sum = v[l] + v[r];
         if (k <= sum)
         {
-            result.push_back(sum);
+            result++;
             r--;
         }
         l++;
     }
-
-    if (result.size() == 0) cout << -1;
-    else cout << result.size();
+    cout << (result == 0 ? -1 : result);
     return 0;
 }
