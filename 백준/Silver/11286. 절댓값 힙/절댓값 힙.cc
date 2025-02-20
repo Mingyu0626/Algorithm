@@ -4,32 +4,32 @@
 #include <queue>
 
 using namespace std;
-typedef pair<int, int> pii;
 
-int n, num, result;
-vector<int> v;
-priority_queue<pii, vector<pii>, greater<pii>> pq;
+int n, x;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n;
+    auto compare = [](int a, int b)
+        {
+            if (abs(a) == abs(b)) return a > b;
+            else return abs(a) > abs(b);
+        };
+    priority_queue<int, vector<int>, decltype(compare)> pq(compare);
     for (int i = 0; i < n; i++)
     {
-        cin >> num;
-        if (num == 0)
+        cin >> x;
+        if (x != 0) pq.push(x);
+        else
         {
             if (!pq.empty())
             {
-                cout << pq.top().second << '\n';
+                cout << pq.top() << '\n';
                 pq.pop();
             }
             else cout << 0 << '\n';
-        }
-        else
-        {
-            pq.push({ abs(num), num });
         }
     }
     return 0;
