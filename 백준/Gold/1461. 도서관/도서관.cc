@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 
 using namespace std;
 
-int n, m, temp, maxDis, result;
-vector<int> v1, v2;
+int n, m, cur, furthest, result;
+vector<int> l, r;
 
 int main()
 {
@@ -14,18 +15,17 @@ int main()
     cin >> n >> m;
     for (int i = 0; i < n; i++)
     {
-        cin >> temp;
-        maxDis = max(maxDis, abs(temp));
-        if (temp > 0) v1.push_back(temp);
-        else v2.push_back(temp);
+        cin >> cur;
+		furthest = max(furthest, abs(cur));
+		if (cur > 0) r.emplace_back(cur);
+		else l.emplace_back(cur);
     }
-    sort(v1.begin(), v1.end(), greater<int>());
-    sort(v2.begin(), v2.end());
-    
-    for (int i = 0; i < v1.size(); i += m) result += v1[i] * 2;
-    for (int i = 0; i < v2.size(); i += m) result += abs(v2[i]) * 2;
+    sort(l.begin(), l.end());
+    sort(r.begin(), r.end(), greater<int>());
+    for (int i = 0; i < l.size(); i += m) result += abs(l[i]) * 2;
+    for (int i = 0; i < r.size(); i += m) result += r[i] * 2;
 
-    result -= maxDis;
+    result -= furthest;
     cout << result;
     return 0;
 }
