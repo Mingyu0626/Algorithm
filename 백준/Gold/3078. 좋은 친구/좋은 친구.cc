@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <queue>
-#include <unordered_map>
+#include <map>
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int n, k;
 long long result;
 string str;
 queue<int> q;
-unordered_map<int, long long> um;
+map<int, long long> m;
 
 int main()
 {
@@ -24,11 +24,11 @@ int main()
         {
             int deletedSize = q.front();
             q.pop();
-            um[deletedSize]--;
+            m[deletedSize]--;
         }
         q.push(curSize);
-        result += um[curSize];
-        um[curSize]++;
+        result += m[curSize];
+        m[curSize]++;
     }
 
     cout << result;
