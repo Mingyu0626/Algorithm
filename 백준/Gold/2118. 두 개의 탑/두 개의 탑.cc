@@ -20,14 +20,15 @@ int main()
         preSum[i] = v[i] + preSum[i - 1];
     }
 
-    for (int i = 0; i <= n; i++)
+    int l = 0, r = 1;
+    while (l < r && r <= n)
     {
-        for (int j = i + 1; j <= n; j++)
-        {
-            int clock = preSum[j] - preSum[i];
-            int halfClock = circumference - clock;
-            result = max(result, min(clock, halfClock));
-        }
+        int clock = preSum[r] - preSum[l];
+        int halfClock = circumference - clock;
+        result = max(result, min(clock, halfClock));
+
+        if (clock < circumference / 2) r++;
+        else l++;
     }
     cout << result;
     return 0;
