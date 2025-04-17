@@ -29,7 +29,7 @@ int main()
     int left = 1, right = 1e9, mid = 0;
     while (left <= right)
     {
-        mid = (left - right) / 2 + right;
+        mid = (right - left) / 2 + left;
         if (bfs(mid))
         {
             left = mid + 1;
