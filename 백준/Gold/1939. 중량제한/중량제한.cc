@@ -1,70 +1,74 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 #include <queue>
 
 using namespace std;
 
-int n, m, a, b, c, result;
-int f1, f2, l = 1, r, mid;
-vector<pair<int, int>> adj[10001];
+int n, m, s, e, result;
+vector<vector<pair<int, int>>> v;
 
-bool bfs(int midVal);
+bool bfs(int mid);
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n >> m;
+    v.assign(n + 1, vector<pair<int, int>>());
+
+    int a, b, c;
     for (int i = 0; i < m; i++)
     {
         cin >> a >> b >> c;
-        adj[a].push_back({ b, c });
-        adj[b].push_back({ a, c });
-        r = max(c, r);
+        v[a].emplace_back(b, c);
+        v[b].emplace_back(a, c);
     }
-    cin >> f1 >> f2;
-    while (l <= r)
+    cin >> s >> e;
+    int left = 1, right = 1e9, mid = 0;
+    while (left <= right)
     {
-        mid = (r - l) / 2 + l;
+        mid = (left - right) / 2 + right;
         if (bfs(mid))
         {
+            left = mid + 1;
             result = max(result, mid);
-            l = mid + 1;
         }
         else
         {
-            r = mid - 1;
+            right = mid - 1;
         }
     }
     cout << result;
     return 0;
 }
 
-bool bfs(int midVal)
+bool bfs(int mid)
 {
-    queue<int> q;
     vector<bool> visited(n + 1, false);
-    q.push(f1);
-    visited[f1] = true;
-
+    queue<int> q;
+    q.push(s);
+    visited[s] = true;
     while (!q.empty())
     {
-        int curNode = q.front();
+        int cur = q.front();
         q.pop();
-        if (curNode == f2)
+
+        if (cur == e)
         {
             return true;
         }
 
-        for (int i = 0; i < adj[curNode].size(); i++)
+        for (int i = 0; i < v[cur].size(); i++)
         {
-            int nextNode = adj[curNode][i].first;
-            int curLimit = adj[curNode][i].second;
-            if (midVal <= curLimit && !visited[nextNode])
+            int nextIsland = v[cur][i].first;
+            int nextBridge = v[cur][i].second;
+
+            if (!visited[nextIsland] && mid <= nextBridge)
             {
-                q.push(nextNode);
-                visited[nextNode] = true;
+                q.push(nextIsland);
+                visited[nextIsland] = true;
             }
         }
     }
