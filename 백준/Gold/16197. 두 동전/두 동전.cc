@@ -5,11 +5,6 @@
 
 using namespace std;
 
-struct coinInfos
-{
-    int ax, ay, bx, by;
-};
-
 template<typename T>
 using Dim2Vec = vector<vector<T>>;
 using pii = pair<int, int>;
@@ -22,7 +17,6 @@ int dx[4] = { 0, 0, 1, -1 };
 int dy[4] = { 1, -1, 0, 0 };
 
 void bfs();
-
 
 int main()
 {
@@ -38,7 +32,6 @@ int main()
             cin >> v[i][j];
         }
     }
-
     bfs();
 }
 
