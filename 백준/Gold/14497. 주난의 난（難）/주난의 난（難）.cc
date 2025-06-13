@@ -9,6 +9,7 @@ using Dim2Vec = vector<vector<T>>;
 
 int n, m, X1, Y1, X2, Y2, result = 1;
 Dim2Vec<char> v;
+Dim2Vec<bool> visited;
 
 int dx[4] = { 0, 0, -1, 1 };
 int dy[4] = { 1, -1, 0, 0 };
@@ -21,6 +22,7 @@ int main()
     cin.tie(0); cout.tie(0);
     cin >> n >> m >> X1 >> Y1 >> X2 >> Y2;
 	v.assign(n + 1, vector<char>(m + 1));
+    visited.assign(n + 1, vector<bool>(m + 1, false));
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= m; j++)
@@ -63,15 +65,15 @@ bool bfs()
             {
                 return true;
             }
-            else if (v[newX][newY] == '1')
+
+            visited[newX][newY] = true;
+            if (v[newX][newY] == '1')
             {
                 v[newX][newY] = 0;
-                visited[newX][newY] = true;
             }
             else
             {
                 q.push({ newX, newY });
-                visited[newX][newY] = true;
             }
         }
     }
