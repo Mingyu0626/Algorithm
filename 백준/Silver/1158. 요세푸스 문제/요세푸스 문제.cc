@@ -1,42 +1,37 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <queue>
 
 using namespace std;
 
-int n, k, cnt, curIdx = -1;
-vector<int> v;
+int n, k;
+queue<int> q;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n >> k;
-    v.assign(n, 0);
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        v[i] = i + 1;
+        q.push(i);
     }
 
     cout << '<';
-    while (cnt < n)
+    while (1 < q.size())
     {
-        for (int i = 0; i < k; i++)
+        int cnt = 1;
+        while (cnt < k)
         {
-            curIdx = (curIdx + 1) % n;
-            if (v[curIdx] == -1)
-            {
-                i -= 1;
-            }
+            int cur = q.front();
+            q.pop();
+            q.push(cur);
+            cnt++;
         }
-        cout << v[curIdx];
-        if (cnt + 1 < n)
-        {
-            cout << ", ";
-        }
-        v[curIdx] = -1;
-        cnt++;
+        cout << q.front();
+        q.pop();
+        cout << ", ";
     }
-    cout << '>';
+
+    cout << q.front() << '>';
     return 0;
 }
