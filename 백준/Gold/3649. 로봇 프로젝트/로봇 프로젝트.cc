@@ -1,13 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cmath>
 
 using namespace std;
 
 int x, n;
 bool canPlug;
-const int CENTITONANO = 10000000;
+const int CENTI_TO_NANO = 10000000;
 
 int main()
 {
@@ -15,7 +14,7 @@ int main()
     cin.tie(0); cout.tie(0);
     while (cin >> x)
     {
-        x *= 10000000;
+        x *= CENTI_TO_NANO;
         canPlug = false;
         cin >> n;
         vector<int> v(n, 0);
