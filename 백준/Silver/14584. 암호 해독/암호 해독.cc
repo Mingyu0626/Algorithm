@@ -1,9 +1,12 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 #include <string>
 
 using namespace std;
+
 string ps, s;
+vector<string> v;
 int n, num;
 
 int main()
@@ -14,39 +17,24 @@ int main()
     for (int i = 0; i < n; ++i)
     {
         cin >> s;
-        int wordLength = s.length();
-        if (ps.length() < wordLength)
-        {
-            continue;
-        }
-        for (int j = 0; j <= ps.length() - wordLength; ++j)
-        {
-            string ss = ps.substr(j, wordLength);
-            bool isIncluded = true;
-            int diff = s[0] - ss[0];
-            diff += diff < 0 ? 26 : 0;
-            for (int k = 1; k < wordLength; ++k)
-            {
-                int curDiff = s[k] - ss[k];
-                curDiff += curDiff < 0 ? 26 : 0;
-
-                if (diff != curDiff)
-                {
-                    isIncluded = false;
-                }
-            }
-            if (isIncluded)
-            {
-                num = diff;
-            }
-        }
+        v.emplace_back(s);
     }
 
-    for (int i = 0; i < ps.length(); ++i)
+    for (int i = 0; i <= 25; ++i)
     {
-        unsigned char newChar = ps[i] + num;
-        newChar -= 'z' < newChar ? 26 : 0;
-        cout << newChar;
+        for (int j = 0; j < n; ++j)
+        {
+            if (ps.find(v[j]) != ps.npos)
+            {
+                cout << ps;
+                break;
+            }
+        }
+
+        for (int j = 0; j < ps.length(); ++j)
+        {
+            ps[j] = ps[j] == 'z' ? 'a' : ps[j] + 1;
+        }
     }
     return 0;
 }
