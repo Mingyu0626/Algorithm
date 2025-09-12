@@ -4,7 +4,7 @@
 using namespace std;
 
 int n;
-vector<int> in, post;
+vector<int> in, inPos, post;
 
 void recursion(int inStartIdx, int inEndIdx, int postStartIdx, int postEndIdx, int root);
 
@@ -13,10 +13,11 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> n;
-    in.assign(n + 1, 0), post.assign(n + 1, 0);
+    in.assign(n + 1, 0), post.assign(n + 1, 0), inPos.assign(n + 1, 0);
     for (int i = 1; i <= n; ++i)
     {
         cin >> in[i];
+        inPos[in[i]] = i;
     }
     for (int i = 1; i <= n; ++i)
     {
@@ -24,21 +25,13 @@ int main()
     }
     int root = post[n];
     recursion(1, n, 1, n, root);
-    
     return 0;
 }
 
 void recursion(int inStartIdx, int inEndIdx, int postStartIdx, int postEndIdx, int root)
 {
     cout << root << ' ';
-    int rootIdx = 0;
-    for (int i = 1; i <= n; i++)
-    {
-        if (root == in[i])
-        {
-            rootIdx = i;
-        }
-    }
+    int rootIdx = inPos[root];
 
     int leftSubTreeSize = rootIdx - inStartIdx;
     int rightSubTreeSize = inEndIdx - rootIdx;
@@ -47,7 +40,6 @@ void recursion(int inStartIdx, int inEndIdx, int postStartIdx, int postEndIdx, i
     if (0 < leftSubTreeSize)
     {
         recursion(inStartIdx, inStartIdx + leftSubTreeSize - 1, postStartIdx, leftPostEndIdx, post[leftPostEndIdx]);
-
     }
     if (0 < rightSubTreeSize)
     {
