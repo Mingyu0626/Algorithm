@@ -26,8 +26,7 @@ struct info
 int solution(vector<vector<int>> jobs) 
 {
     int n = jobs.size();
-    vector<vector<int>> sorted_jobs = jobs;
-    sort(sorted_jobs.begin(), sorted_jobs.end());
+    sort(jobs.begin(), jobs.end());
 
     priority_queue<info> pq;
     long long curTime = 0;
@@ -36,9 +35,9 @@ int solution(vector<vector<int>> jobs)
     
     while (jobIdx < n || !pq.empty())
     {
-        while (jobIdx < n && sorted_jobs[jobIdx][0] <= curTime)
+        while (jobIdx < n && jobs[jobIdx][0] <= curTime)
         {
-            pq.push({jobIdx, sorted_jobs[jobIdx][0], sorted_jobs[jobIdx][1]});
+            pq.push({jobIdx, jobs[jobIdx][0], jobs[jobIdx][1]});
             jobIdx++;
         }
 
@@ -52,7 +51,7 @@ int solution(vector<vector<int>> jobs)
         }
         else
         {
-            curTime = sorted_jobs[jobIdx][0];
+            curTime = jobs[jobIdx][0];
         }
     }
     
