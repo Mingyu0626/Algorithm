@@ -5,7 +5,7 @@
 using namespace std;
 
 int n, m;
-long long jealous;
+int jealous;
 vector<int> v;
 
 int main()
@@ -14,11 +14,11 @@ int main()
     cin.tie(0); cout.tie(0);
     cin >> n >> m;
     v.assign(m, 0);
-    long long l = 1, r = 0, mid;
+    int l = 1, r = 0, mid;
     for (int i = 0; i < m; ++i)
     {
         cin >> v[i];
-        r += v[i];
+        r = max(r, v[i]);
     }
 
     jealous = r;
