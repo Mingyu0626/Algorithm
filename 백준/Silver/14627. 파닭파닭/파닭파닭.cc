@@ -4,9 +4,9 @@
 
 using namespace std;
 
-long long s, c, l, r, m, maximumLength;
-long long result, sum;
-vector<long long> v;
+int s, c, l, r;
+long long result, sum, m, maximumLength;
+vector<int> v;
 
 int main()
 {
