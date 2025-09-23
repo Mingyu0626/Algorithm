@@ -5,7 +5,7 @@
 
 using namespace std;
 
-long long t, x, y, diff;
+int t, x, y, diff;
 vector<long long> v(1, 0);
 
 int main()
