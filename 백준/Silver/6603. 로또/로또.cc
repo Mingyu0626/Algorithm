@@ -5,7 +5,7 @@
 using namespace std;
 
 int k;
-vector<int> v;
+vector<int> v(14, 0);
 
 void combination(int idx, vector<int>& result);
 
@@ -15,7 +15,7 @@ int main()
     cin.tie(0); cout.tie(0);
     while (cin >> k && k != 0)
     {
-        v.assign(k + 1, 0);
+        v.clear();
         for (int i = 1; i <= k; ++i)
         {
             cin >> v[i];
