@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <numeric>
 
 using namespace std;
@@ -11,9 +12,6 @@ int main()
     cin.tie(0); cout.tie(0);
     cin >> a >> b;
     GCD = gcd(a, b);
-    for (int i = 0; i < GCD; ++i)
-    {
-        cout << 1;
-    }
+    cout << string(GCD, '1');
     return 0;
 }
