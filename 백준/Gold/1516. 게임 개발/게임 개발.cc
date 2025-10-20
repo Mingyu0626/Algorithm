@@ -1,43 +1,72 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <queue>
 
 using namespace std;
+template <typename T>
+using Dim2Vec = vector<vector<T>>;
+using pii = pair<int, int>;
 
-int n;
-int t[501], dp[501];
-vector<int> nb[501];
+int n, m;
+vector<int> id, t, result;
+Dim2Vec<int> edges;
 
-int recursion(int a);
+void topologySort();
 
 int main()
 {
-	ios::sync_with_stdio(false);
-	cin.tie(0); cout.tie(0);
-	cin >> n;
-	for (int i = 1; i <= n; i++)
-	{
-		int temp = 0;
-		cin >> t[i];
-		while (temp != -1)
-		{
-			cin >> temp;
-			nb[i].push_back(temp);
-		}
-	}
+    ios::sync_with_stdio(false);
+    cin.tie(0); cout.tie(0);
+    cin >> n;
+    id.assign(n + 1, 0), t.assign(n + 1, 0), result.assign(n + 1, 0);
+    edges.assign(n + 1, vector<int>());
+    for (int i = 1; i <= n; ++i)
+    {
+        cin >> t[i];
+        while (cin >> m && m != -1)
+        {
+            id[i]++;
+            edges[m].emplace_back(i);
+        }
+    }
 
-	for (int i = 1; i <= n; i++) cout << recursion(i) << "\n";
-	return 0;
+    topologySort();
+    for (int i = 1; i <= n; ++i)
+    {
+        cout << result[i] << '\n';
+    }
+    return 0;
 }
 
-int recursion(int a)
+void topologySort()
 {
-	if (dp[a] != 0) return dp[a];
+    queue<pii> q;
+    for (int i = 1; i <= n; ++i)
+    {
+        if (id[i] == 0)
+        {
+            q.push({i, t[i]});
+            result[i] = t[i];
+        }
+    }
 
-	int maxNB = 0;
-	for (int i = 0; i < nb[a].size(); i++) maxNB = max(maxNB, recursion(nb[a][i]));
+    while (!q.empty())
+    {
+        int curNode = q.front().first;
+        int curTime = q.front().second;
+        q.pop();
 
-	dp[a] = maxNB + t[a];
-	return dp[a];
+        for (int j = 0; j < edges[curNode].size(); ++j)
+        {
+            int nextNode = edges[curNode][j];
+            result[nextNode] = max(result[nextNode], curTime);
+
+            id[nextNode]--;
+            if (id[nextNode] == 0)
+            {
+                result[nextNode] += t[nextNode];
+                q.push({nextNode, result[nextNode]});
+            }
+        }
+    }
 }
-
