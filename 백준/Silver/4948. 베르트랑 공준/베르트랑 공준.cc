@@ -4,7 +4,7 @@
 using namespace std;
 
 int n;
-vector<bool> v(300001, true);
+vector<bool> v(123456 * 2 + 1, true);
 
 int main()
 {
