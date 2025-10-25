@@ -14,7 +14,7 @@ Dim2Vec<int> edges;
 vector<bool> candidates;
 
 
-void bfs(int curNode, int curSheep, int curWolf, const vector<int>& info);
+void dfs(int curNode, int curSheep, int curWolf, const vector<int>& info);
 
 
 int solution(vector<int> info, vector<vector<int>> e) 
@@ -28,11 +28,11 @@ int solution(vector<int> info, vector<vector<int>> e)
     }
     
     
-    bfs(0, 0, 0, info);
+    dfs(0, 0, 0, info);
     return result;
 }
 
-void bfs(int curNode, int curSheep, int curWolf, const vector<int>& info)
+void dfs(int curNode, int curSheep, int curWolf, const vector<int>& info)
 {
     if (0 < curSheep && curSheep <= curWolf)
     {
@@ -55,7 +55,7 @@ void bfs(int curNode, int curSheep, int curWolf, const vector<int>& info)
         if (candidates[i])
         {
             candidates[i] = false;
-            bfs(i, curSheep, curWolf, info);
+            dfs(i, curSheep, curWolf, info);
             candidates[i] = true;
         }
     }
