@@ -1,84 +1,97 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <deque>
 #include <string>
+#include <deque>
 
 using namespace std;
 
-int t, n, x;
+int t, n, num;
+bool dir;
 char temp;
-bool isEmpty, dir;
-string p;
+string s;
+deque<int> dq;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> t;
-    while (t > 0)
+    while (0 < t--)
     {
-        deque<int> dq;
-        cin >> p >> n;
-        isEmpty = false;
+        cin >> s >> n;
+        dq.clear();
         dir = true;
 
-        cin >> temp;
-        for (int i = 0; i < n * 2 - 1; i++)
+        for (int i = 0; i < n * 2 + 1; ++i)
         {
-            if (i % 2 == 0)
+            if (i % 2 == 1)
             {
-                cin >> x;
-                dq.push_back(x);
+                cin >> num;
+                dq.emplace_back(num);
             }
-            else cin >> temp;
+            else
+            {
+                cin >> temp;
+            }
         }
-        cin >> temp;
-
-        for (int i = 0; i < p.size(); i++)
+        if (n == 0)
         {
-            if (p[i] == 'R') dir = !dir;
+            cin >> temp;
+        }
 
-            if (p[i] == 'D')
+        bool errorOccured = false;
+        for (int i = 0; i < s.length(); ++i)
+        {
+            if (s[i] == 'R')
+            {
+                dir = !dir;
+            }
+            else
             {
                 if (!dq.empty())
                 {
-                    if (dir) dq.pop_front();
-                    else dq.pop_back();
+                    if (dir)
+                    {
+                        dq.pop_front();
+                    }
+                    else
+                    {
+                        dq.pop_back();
+                    }
                 }
                 else
                 {
                     cout << "error\n";
-                    isEmpty = true;
+                    errorOccured = true;
                     break;
                 }
             }
         }
-
-        if (!isEmpty)
+        
+        if (!errorOccured)
         {
             cout << '[';
-            if (dir)
+            while (!dq.empty())
             {
-                while (!dq.empty())
+                if (dir)
                 {
                     cout << dq.front();
                     dq.pop_front();
-                    if (!dq.empty()) cout << ',';
                 }
-            }
-            else
-            {
-                while (!dq.empty())
+                else
                 {
                     cout << dq.back();
                     dq.pop_back();
-                    if (!dq.empty()) cout << ',';
+                }
+
+                if (!dq.empty())
+                {
+                    cout << ',';
                 }
             }
             cout << "]\n";
         }
-        t--;
     }
     return 0;
 }
