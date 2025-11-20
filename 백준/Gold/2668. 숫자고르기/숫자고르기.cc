@@ -8,7 +8,7 @@ int n;
 vector<int> v, result;
 vector<bool> visited;
 
-bool dfs(int startIdx, int curIdx, int curDepth);
+bool dfs(int startIdx, int curIdx);
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
     {
         if (!visited[i])
         {
-            dfs(i, i, 1);
+            dfs(i, i);
         }
     }
 
@@ -44,14 +44,14 @@ int main()
     return 0;
 }
 
-bool dfs(int startIdx, int curIdx, int curDepth)
+bool dfs(int startIdx, int curIdx)
 {
     visited[curIdx] = true;
     if (v[curIdx] == startIdx)
     {
         return true;
     }
-    if (!visited[v[curIdx]] && dfs(startIdx, v[curIdx], curDepth + 1))
+    if (!visited[v[curIdx]] && dfs(startIdx, v[curIdx]))
     {
         return true;
     }
