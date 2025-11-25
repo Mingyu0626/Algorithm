@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <queue>
 
 using namespace std;
@@ -22,6 +21,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     getInput();
+    initQueue();
     topologySort();
     printResult();
     return 0;
@@ -52,8 +52,6 @@ void getInput()
 
 void topologySort()
 {
-    initQueue();
-
     while (!q.empty())
     {
         int curSinger = q.front();
