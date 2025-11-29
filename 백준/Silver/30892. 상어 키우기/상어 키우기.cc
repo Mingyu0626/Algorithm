@@ -21,28 +21,22 @@ int main()
     }
 
     sort(v.begin(), v.end());
-    int idx = 0, prevIdx = -1;
-    while (0 < k--)
+    int idx = 0;
+    while (k--)
     {
-        int idx = lower_bound(v.begin(), v.end(), t) - v.begin() - 1;
-
-        if (prevIdx == idx || idx == n)
+        while (idx + 1 < n && v[idx + 1] < t)
         {
-            if (!s.empty())
-            {
-                t += s.top();
-                s.pop();
-            }
+            s.push(v[idx++]);
         }
-        else
+        if (idx < n && v[idx] < t)
         {
-            t += v[idx];
-            for (int i = prevIdx + 1; i < idx; ++i)
-            {
-                s.push(v[i]);
-            }
+            t += v[idx++];
         }
-        prevIdx = idx;
+        else if (!s.empty())
+        {
+            t += s.top();
+            s.pop();
+        }
     }
     cout << t;
     return 0;
