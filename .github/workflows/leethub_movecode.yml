@@ -1,59 +1,143 @@
-name: Move LeetCode Solutions
+name: LeetHub Setting
 
 on:
-  workflow_dispatch:
   push:
-    # 1. 트리거 조건 완화: 숫자로 시작하는 모든 폴더 감지 ([0-9]+ 대신 와일드카드 사용)
-    paths:
-      - '[0-9]*-*/**' 
+    branches: [ "main" ]
 
 permissions:
   contents: write
 
 jobs:
-  move-files:
+  detect:
     runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check_leethub.outputs.should_run }}
+      package_name: ${{ steps.detect_package.outputs.PACKAGE_NAME }}
+      commit_msg: ${{ steps.check_leethub.outputs.commit_msg }}
+      level: ${{ steps.extract_level.outputs.leetcode_level }}
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # 전체 히스토리를 가져와야 안전합니다
+          fetch-depth: 2 # 이전 로그 2개까지 해서 변경점 비교(디폴트는 1)
 
-      - name: Move LeetCode solutions
+      - name: Check if LeetHub Commit
+        id: check_leethub
         run: |
-          mkdir -p LeetCode
-          
-          # 2. 탐색 패턴 수정: 숫자로 시작하는 모든 폴더([0-9]*-*)를 찾습니다.
-          # 예: 1-two-sum, 20-valid-parentheses, 1930-unique... 모두 포함
-          found=0
-          for d in [0-9]*-*; do
-            if [ -d "$d" ]; then
-              echo "Moving directory: $d"
-              # 기존에 같은 폴더가 있으면 덮어쓰거나 병합 (안전장치 추가)
-              if [ -d "LeetCode/$d" ]; then
-                cp -r "$d"/* "LeetCode/$d/"
-                rm -rf "$d"
-              else
-                mv "$d" "LeetCode/"
+          COMMIT_MSG=$(git log -1 --pretty=%B | tail -n 1)
+          echo "Latest commit message: $COMMIT_MSG"
+
+          if [[ "$COMMIT_MSG" == Time:* && "$COMMIT_MSG" == *"- LeetHub" ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+            echo "commit_msg=${COMMIT_MSG}" >> $GITHUB_OUTPUT
+            echo "LeetHub 커밋 확인, 패키지 이사 작업 준비 ✅"
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+            echo "commit_msg=" >> $GITHUB_OUTPUT
+            echo "작업 없이 패스하면 됩니다 ❌"
+          fi
+
+      - name: Detect New Solve Package
+        id: detect_package
+        if: steps.check_leethub.outputs.should_run == 'true'
+        run: |
+          EXCLUDE_DIRS=("LeetCode" "백준" "프로그래머스" ".github")
+          NEW_DIRS=$(git diff --name-only HEAD~1 HEAD | awk -F/ 'NF==2 {print $1}' | sort -u)
+
+          for DIR in $NEW_DIRS; do
+            SKIP=false
+            for EX in "${EXCLUDE_DIRS[@]}"; do
+              if [[ "$DIR" == "$EX" ]]; then
+                SKIP=true
+                break
               fi
-              found=1
+            done
+
+            if [[ "$SKIP" == false ]]; then
+              echo "새로 추가된 문제풀이 패키지명: $DIR"
+              echo "PACKAGE_NAME=$DIR" >> $GITHUB_OUTPUT
+              break
             fi
           done
-          
-          if [ $found -eq 0 ]; then
-            echo "No matching directories found to move."
-            # 강제로 빈 커밋을 방지하기 위해 여기서 종료하지 않고, 아래 커밋 단계에서 처리
+
+      - name: Extract Level from README
+        id: extract_level
+        if: steps.check_leethub.outputs.should_run == 'true' && steps.detect_package.outputs.PACKAGE_NAME != ''
+        run: |
+          PACKAGE_NAME="${{ steps.detect_package.outputs.PACKAGE_NAME }}"
+          README_PATH="$PACKAGE_NAME/README.md"
+         
+          if [ ! -f "$README_PATH" ]; then
+            echo "README.md 파일 없음 ❌"
+            echo "leetcode_level=Unknown" >> $GITHUB_OUTPUT
+            exit 0
           fi
 
-      - name: Commit & Push changes
-        run: |
-          # Git 상태 확인 및 커밋
-          if git status --porcelain | grep .; then
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-            git add -A
-            git commit -m "chore: Move LeetCode solutions to LeetCode folder"
-            git push
-          else
-            echo "No changes to commit (파일이 이동되지 않았거나 이미 정리됨)"
+          # h3 태그 안에서 난이도 추출
+          LEVEL=$(grep -oP '(?<=<h3>).*?(?=</h3>)' "$README_PATH" | head -n 1)
+
+          # 없으면 fallback
+          if [ -z "$LEVEL" ]; then
+            LEVEL="Unknown"
           fi
+
+          echo "LeetCode 문제 난이도: $LEVEL"
+          echo "leetcode_level=$LEVEL" >> $GITHUB_OUTPUT
+
+  move:
+    needs: detect
+    if: ${{ needs.detect.outputs.should_run == 'true' && needs.detect.outputs.package_name != '' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+         
+      - name: Move Directory
+        run: |
+          PACKAGE_NAME="${{ needs.detect.outputs.PACKAGE_NAME }}"
+          LEVEL_DIRECTORY="${{ needs.detect.outputs.level }}"
+          ROOT_DIR="LeetCode"
+     
+          echo "옮겨야 할 패키지 확인: $PACKAGE_NAME"
+          echo "감지된 레벨: $LEVEL_DIRECTORY"
+     
+          # 먼저 기존에 동일한 디렉토리 위치가 있는지 탐색
+          FOUND_EXISTING_PATH=""
+          for dir in "$ROOT_DIR"/*; do
+            if [ -d "$dir/$PACKAGE_NAME" ]; then
+              FOUND_EXISTING_PATH="$dir"
+              echo "기존 디렉토리 발견: $dir/$PACKAGE_NAME"
+              break
+            fi
+          done
+     
+          # 기존 위치로 이동
+          if [ -n "$FOUND_EXISTING_PATH" ]; then
+            DEST="$FOUND_EXISTING_PATH/$PACKAGE_NAME"
+            echo "→ 기존 디렉토리로 병합 이동: $DEST"
+            mv "$PACKAGE_NAME"/* "$DEST"/
+            rmdir "$PACKAGE_NAME" || true
+     
+          # 새로 이동해야 할 경우
+          else
+           DEST="$ROOT_DIR/$LEVEL_DIRECTORY/$PACKAGE_NAME"
+            echo "→ 새 디렉토리로 이동: $DEST"
+            mkdir -p "$ROOT_DIR/$LEVEL_DIRECTORY"
+            mv "$PACKAGE_NAME" "$ROOT_DIR/$LEVEL_DIRECTORY/"
+          fi
+
+      - name: Commit and Push
+        run: |
+          COMMIT_MSG="${{ needs.detect.outputs.commit_msg }}"
+          echo "커밋 메세지 확인: $COMMIT_MSG"
+       
+          git config --global user.name <당신의 깃헙 닉네임>
+          git config --global user.email <당신의 깃헙 가입 이메일>
+
+          git add .
+          git commit -m "$COMMIT_MSG" || echo "No changes to commit"
+          git push
