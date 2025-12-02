@@ -1,0 +1,12 @@
+- name: Check if LeetHub Commit
+  id: check_leethub
+  run: |
+    COMMIT_MSG=$(git log -1 --pretty=%B | tail -n 1)
+    echo "Latest commit message: $COMMIT_MSG"
+
+    # 와일드카드 + "- LeetHub" 검증
+    if [[ "$COMMIT_MSG" == *"- LeetHub" ]]; then
+      echo "LeetHub commit detected ✅"
+    else
+      echo "Not a LeetHub commit ❌"
+    fi
