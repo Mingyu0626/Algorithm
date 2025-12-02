@@ -1,10 +1,14 @@
 name: Move LeetCode Solutions
 
 on:
-  workflow_dispatch:  # 수동 실행 옵션 유지
+  workflow_dispatch:
   push:
+    # 1. 트리거 조건 완화: 숫자로 시작하는 모든 폴더 감지 ([0-9]+ 대신 와일드카드 사용)
     paths:
-      - '[0-9][0-9][0-9][0-9]-*/**'  # LeetHub가 생성하는 폴더 패턴 (예: 0020-valid-parentheses)
+      - '[0-9]*-*/**' 
+
+permissions:
+  contents: write
 
 jobs:
   move-files:
@@ -13,38 +17,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # 최근 커밋 기록을 가져오기 위해 설정
+          fetch-depth: 0 # 전체 히스토리를 가져와야 안전합니다
 
       - name: Move LeetCode solutions
         run: |
-          # 디버깅을 위한 현재 디렉토리 내용 출력
-          echo "Current directory contents:"
-          ls -la
-          
-          # LeetCode 폴더가 없다면 생성
           mkdir -p LeetCode
           
-          # 변경된 파일 목록 확인
-          echo "Changed files in this push:"
-          git diff --name-only HEAD^ HEAD
-          
-          # LeetHub가 생성한 폴더들을 LeetCode 폴더로 이동
+          # 2. 탐색 패턴 수정: 숫자로 시작하는 모든 폴더([0-9]*-*)를 찾습니다.
+          # 예: 1-two-sum, 20-valid-parentheses, 1930-unique... 모두 포함
           found=0
-          for d in [0-9][0-9][0-9][0-9]-*; do
+          for d in [0-9]*-*; do
             if [ -d "$d" ]; then
               echo "Moving directory: $d"
-              mv "$d" "LeetCode/" && found=1
+              # 기존에 같은 폴더가 있으면 덮어쓰거나 병합 (안전장치 추가)
+              if [ -d "LeetCode/$d" ]; then
+                cp -r "$d"/* "LeetCode/$d/"
+                rm -rf "$d"
+              else
+                mv "$d" "LeetCode/"
+              fi
+              found=1
             fi
           done
           
-          # 이동할 폴더를 찾지 못했을 경우에도 오류로 처리하지 않음
           if [ $found -eq 0 ]; then
-            echo "No matching directories found to move"
+            echo "No matching directories found to move."
+            # 강제로 빈 커밋을 방지하기 위해 여기서 종료하지 않고, 아래 커밋 단계에서 처리
           fi
 
       - name: Commit & Push changes
         run: |
-          # 변경사항이 있는지 확인
+          # Git 상태 확인 및 커밋
           if git status --porcelain | grep .; then
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -52,5 +55,5 @@ jobs:
             git commit -m "chore: Move LeetCode solutions to LeetCode folder"
             git push
           else
-            echo "No changes to commit"
+            echo "No changes to commit (파일이 이동되지 않았거나 이미 정리됨)"
           fi
