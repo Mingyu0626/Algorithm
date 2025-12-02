@@ -135,8 +135,8 @@ jobs:
           COMMIT_MSG="${{ needs.detect.outputs.commit_msg }}"
           echo "커밋 메세지 확인: $COMMIT_MSG"
        
-          git config --global user.name <당신의 깃헙 닉네임>
-          git config --global user.email <당신의 깃헙 가입 이메일>
+          git config --global user.name "Mingyu0626"
+          git config --global user.email "mg010626@naver.com"
 
           git add .
           git commit -m "$COMMIT_MSG" || echo "No changes to commit"
