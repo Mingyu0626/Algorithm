@@ -20,14 +20,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2 # 이전 로그 2개까지 해서 변경점 비교(디폴트는 1)
+          fetch-depth: 2
 
       - name: Check if LeetHub Commit
         id: check_leethub
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B | tail -n 1)
           echo "Latest commit message: $COMMIT_MSG"
-
           if [[ "$COMMIT_MSG" == Time:* && "$COMMIT_MSG" == *"- LeetHub" ]]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
             echo "commit_msg=${COMMIT_MSG}" >> $GITHUB_OUTPUT
@@ -44,7 +43,6 @@ jobs:
         run: |
           EXCLUDE_DIRS=("LeetCode" "백준" "프로그래머스" ".github")
           NEW_DIRS=$(git diff --name-only HEAD~1 HEAD | awk -F/ 'NF==2 {print $1}' | sort -u)
-
           for DIR in $NEW_DIRS; do
             SKIP=false
             for EX in "${EXCLUDE_DIRS[@]}"; do
@@ -53,7 +51,6 @@ jobs:
                 break
               fi
             done
-
             if [[ "$SKIP" == false ]]; then
               echo "새로 추가된 문제풀이 패키지명: $DIR"
               echo "PACKAGE_NAME=$DIR" >> $GITHUB_OUTPUT
@@ -67,21 +64,15 @@ jobs:
         run: |
           PACKAGE_NAME="${{ steps.detect_package.outputs.PACKAGE_NAME }}"
           README_PATH="$PACKAGE_NAME/README.md"
-         
           if [ ! -f "$README_PATH" ]; then
             echo "README.md 파일 없음 ❌"
             echo "leetcode_level=Unknown" >> $GITHUB_OUTPUT
             exit 0
           fi
-
-          # h3 태그 안에서 난이도 추출
           LEVEL=$(grep -oP '(?<=<h3>).*?(?=</h3>)' "$README_PATH" | head -n 1)
-
-          # 없으면 fallback
           if [ -z "$LEVEL" ]; then
             LEVEL="Unknown"
           fi
-
           echo "LeetCode 문제 난이도: $LEVEL"
           echo "leetcode_level=$LEVEL" >> $GITHUB_OUTPUT
 
@@ -95,36 +86,32 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-         
+          
       - name: Move Directory
         run: |
           PACKAGE_NAME="${{ needs.detect.outputs.PACKAGE_NAME }}"
           LEVEL_DIRECTORY="${{ needs.detect.outputs.level }}"
           ROOT_DIR="LeetCode"
-     
+      
           echo "옮겨야 할 패키지 확인: $PACKAGE_NAME"
           echo "감지된 레벨: $LEVEL_DIRECTORY"
-     
-          # 먼저 기존에 동일한 디렉토리 위치가 있는지 탐색
-          FOUND_EXISTING_PATH=""
+      
+          FOUND_PARENT_DIR=""
           for dir in "$ROOT_DIR"/*; do
             if [ -d "$dir/$PACKAGE_NAME" ]; then
-              FOUND_EXISTING_PATH="$dir"
-              echo "기존 디렉토리 발견: $dir/$PACKAGE_NAME"
+              FOUND_PARENT_DIR="$dir"
+              echo "기존 디렉토리 부모 경로 발견: $dir"
               break
             fi
           done
-     
-          # 기존 위치로 이동
-          if [ -n "$FOUND_EXISTING_PATH" ]; then
-            DEST="$FOUND_EXISTING_PATH/$PACKAGE_NAME"
-            echo "→ 기존 디렉토리로 병합 이동: $DEST"
-            mv "$PACKAGE_NAME"/* "$DEST"/
-            rmdir "$PACKAGE_NAME" || true
-     
-          # 새로 이동해야 할 경우
+      
+          if [ -n "$FOUND_PARENT_DIR" ]; then
+            DEST="$FOUND_PARENT_DIR/$PACKAGE_NAME"
+            echo "→ 기존 디렉토리 삭제 후 덮어쓰기: $DEST"
+            rm -rf "$DEST"
+            mv "$PACKAGE_NAME" "$FOUND_PARENT_DIR/"
           else
-           DEST="$ROOT_DIR/$LEVEL_DIRECTORY/$PACKAGE_NAME"
+            DEST="$ROOT_DIR/$LEVEL_DIRECTORY/$PACKAGE_NAME"
             echo "→ 새 디렉토리로 이동: $DEST"
             mkdir -p "$ROOT_DIR/$LEVEL_DIRECTORY"
             mv "$PACKAGE_NAME" "$ROOT_DIR/$LEVEL_DIRECTORY/"
@@ -134,7 +121,7 @@ jobs:
         run: |
           COMMIT_MSG="${{ needs.detect.outputs.commit_msg }}"
           echo "커밋 메세지 확인: $COMMIT_MSG"
-       
+        
           git config --global user.name "Mingyu0626"
           git config --global user.email "mg010626@naver.com"
 
