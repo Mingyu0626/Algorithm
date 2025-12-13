@@ -121,10 +121,11 @@ jobs:
         run: |
           COMMIT_MSG="${{ needs.detect.outputs.commit_msg }}"
           echo "커밋 메세지 확인: $COMMIT_MSG"
-        
+       
           git config --global user.name "Mingyu0626"
           git config --global user.email "mg010626@naver.com"
 
           git add .
           git commit -m "$COMMIT_MSG" || echo "No changes to commit"
-          git push
+          git pull origin master --rebase
+          git push origin master
