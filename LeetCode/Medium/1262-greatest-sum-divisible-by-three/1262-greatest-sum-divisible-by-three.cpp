@@ -1,34 +1,80 @@
 class Solution {
 public:
-    int n;
+    int n, sum;
     vector<int> nums;
-    vector<vector<int>> dp;
 
     int maxSumDivThree(vector<int>& numbers) {
         initialize(numbers);
-        sortDesc();
-        fillDPArray();
-        return dp[n - 1][0];
+        sortAsc();
+        calculateSum();
+        return calculateMaxSumDivisibleByTree();
     }
 
     void initialize(vector<int>& numbers) {
         n = numbers.size();
         nums = numbers;
-        dp.assign(n, vector<int>(3, 0));
     }
 
-    void sortDesc() {
-        sort(nums.rbegin(), nums.rend());
+    void sortAsc() {
+        sort(nums.begin(), nums.end());
     }
 
-    void fillDPArray() {
-        dp[0][nums[0] % 3] = nums[0];
-        for (int i = 1; i < n; ++i) {
-            int cur = nums[i], remainder = cur % 3;
-            int prevOne = (remainder + 1) % 3, prevTwo = (remainder + 2) % 3;
-            dp[i][remainder] = (dp[i - 1][0] != 0) ? max(dp[i - 1][remainder], dp[i - 1][0] + cur) : cur;
-            dp[i][prevOne] = (dp[i - 1][1] != 0) ? max(dp[i - 1][prevOne], dp[i - 1][1] + cur) : dp[i - 1][prevOne];
-            dp[i][prevTwo] = (dp[i - 1][2] != 0) ? max(dp[i - 1][prevTwo], dp[i - 1][2] + cur) : dp[i - 1][prevTwo];
+    int calculateMaxSumDivisibleByTree() {
+        if (sum % 3 == 0) {
+            return sum;
         }
+        if (sum % 3 == 1) {
+            return getMaxSumOnRemainIs1();
+        }
+        if (sum % 3 == 2) {
+            return getMaxSumOnRemainIs2();
+        }
+        return -1;
+    }
+
+    void calculateSum() {
+        sum = accumulate(nums.begin(), nums.end(), 0);
+    }
+
+    int getMaxSumOnRemainIs1() {
+        int remainOne = 1e9;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] % 3 == 1) {
+                remainOne = nums[i]; break;
+            }
+        }
+
+        int remainTwos = 0, cnt = 0;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] % 3 == 2) {
+                remainTwos += nums[i], cnt++;
+            }
+            if (cnt == 2) {
+                break;
+            }
+        }
+        remainTwos = (cnt == 2) ? remainTwos : 1e9;
+        return sum - min(remainOne, remainTwos);
+    }
+
+    int getMaxSumOnRemainIs2() {
+        int remainTwo = 1e9;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] % 3 == 2) {
+                remainTwo = nums[i]; break;
+            }
+        }
+
+        int remainOnes = 0, cnt = 0;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] % 3 == 1) {
+                remainOnes += nums[i], cnt++;
+            }
+            if (cnt == 2) {
+                break;
+            }
+        }
+        remainOnes = (cnt == 2) ? remainOnes : 1e9;
+        return sum - min(remainTwo, remainOnes);
     }
 };
