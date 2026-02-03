@@ -44,15 +44,11 @@ void setTimesFromAtoB() {
         double distFromStartToCannon = getDist(start, cannons[i]);
         minTimesFromAtoB[0][i + 1] = minTimesFromAtoB[i + 1][0] 
             = getShortestTime(distFromStartToCannon, false);
-    }
-
-    for (int i = 0; i < n; ++i) {
+        
         double distFromCannonToDest = getDist(cannons[i], dest);
         minTimesFromAtoB[i + 1][n + 1] = minTimesFromAtoB[n + 1][i + 1] 
             = getShortestTime(distFromCannonToDest, true);
-    }
-
-    for (int i = 0; i < n; ++i) {
+        
         for (int j = i + 1; j < n; ++j) {
             double distFromCannonToCannon = getDist(cannons[i], cannons[j]);
             minTimesFromAtoB[i + 1][j + 1] = minTimesFromAtoB[j + 1][i + 1] 
