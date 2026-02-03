@@ -1,9 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-#include <queue>
-#include <float.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 using pdd = pair<double, double>;
@@ -66,13 +61,11 @@ void setTimesFromAtoB() {
     }
 }
 
-double getDist(const pdd& p1, const pdd& p2)
-{
+double getDist(const pdd& p1, const pdd& p2) {
     return sqrt(pow(p1.first - p2.first, 2) + pow(p1.second - p2.second, 2));
 }
 
-double getShortestTime(const double& dist, const bool& isCannon)
-{
+double getShortestTime(const double& dist, const bool& isCannon) {
     return (isCannon) ? min(dist / 5, 2 + fabs(dist - 50) / 5) : dist / 5;
 }
 
