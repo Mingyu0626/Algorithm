@@ -1,2 +1,10 @@
 # Algorithm
 BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들이 업로드되는 리포지토리입니다.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
+<!---LeetCode Topics End-->
