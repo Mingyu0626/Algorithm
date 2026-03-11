@@ -1,11 +1,10 @@
 class Solution {
 private:
     int w1, w2;
-    vector<vector<int>> dp;
 public:
     int minDistance(string word1, string word2) {
         w1 = word1.length(), w2 = word2.length();
-        dp.assign(w1 + 1, vector<int>(w2 + 1, 0));
+        vector<vector<int>> dp(w1 + 1, vector<int>(w2 + 1, 0));
         for (int i = 0; i <= w1; ++i) {
             dp[i][0] = i;
         }
