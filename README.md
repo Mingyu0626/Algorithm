@@ -16,9 +16,18 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
+| [0231-power-of-two](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0231-power-of-two/) | Easy |
 | [1009-complement-of-base-10-integer](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1009-complement-of-base-10-integer/) | Easy |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0231-power-of-two](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0231-power-of-two/) | Easy |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0231-power-of-two](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0231-power-of-two/) | Easy |
 <!---LeetCode Topics End-->
