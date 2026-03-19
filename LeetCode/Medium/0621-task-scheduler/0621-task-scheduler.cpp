@@ -1,36 +1,25 @@
 class Solution {
+private:
+    vector<int> v;
+    int tasksSize, maxCnt;
+
 public:
     int leastInterval(vector<char>& tasks, int n) {
-        unordered_map<char, int> counts;
-        for (const auto& a : tasks) {
-            counts[a]++;
+        v.assign(26, 0);
+        tasksSize = tasks.size();
+        for (int i = 0; i < tasksSize; ++i) {
+            v[tasks[i] - 'A']++;
+            maxCnt = max(maxCnt, v[tasks[i] - 'A']);
         }
 
-        priority_queue<pair<int, char>> pq;
-        for (const auto& a : counts) {
-            pq.push({a.second, a.first});
-        }
+        // 총 K회의 사이클을 돌았을 때, K - 1회의 사이클
+        int cycle = n + 1;
+        int result = (maxCnt - 1) * cycle;
 
-        int result = 0;
-        while (!pq.empty())
-        {
-            vector<pair<int, char>> v;
-            int cycle = n + 1, doTaskCount = 0;
-            while (!pq.empty() && 0 < cycle--)
-            {
-                pair<int, char> cur = pq.top();
-                pq.pop();
-                if (0 < cur.first - 1) {
-                    v.push_back({cur.first - 1, cur.second});
-                }
-                doTaskCount++;
-            }
-
-            for (const auto& a : v) {
-                pq.push(a);
-            }
-            result += (!pq.empty()) ? n + 1 : doTaskCount;
+        // 마지막 K번째 사이클
+        for (int i = 0; i < v.size(); ++i) {
+            result += (v[i] == maxCnt) ? 1 : 0;
         }
-        return result;
+        return max(result, tasksSize);
     }
 };
