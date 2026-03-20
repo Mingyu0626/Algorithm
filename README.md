@@ -36,6 +36,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0231-power-of-two](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0231-power-of-two/) | Easy |
+| [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -45,6 +46,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | ------- | ------- |
 | [0389-find-the-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0389-find-the-difference/) | Easy |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
+| [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -66,4 +68,8 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 <!---LeetCode Topics End-->
