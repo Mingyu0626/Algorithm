@@ -13,7 +13,9 @@ public:
         num %= 2 * (w + h - 2);
         if (curX == 0 && curY == 0 && num == 0) {
             curDir = 3;
+            return;
         }
+        
         while (0 < num--) {
             int newX = curX + dx[curDir], newY = curY + dy[curDir];
             if (newX < 0 || w <= newX || newY < 0 || h <= newY) {
