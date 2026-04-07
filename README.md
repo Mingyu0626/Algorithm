@@ -96,5 +96,10 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
+| [2069-walking-robot-simulation-ii](https://github.com/Mingyu0626/Algorithm/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2069-walking-robot-simulation-ii](https://github.com/Mingyu0626/Algorithm/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 <!---LeetCode Topics End-->
