@@ -10,8 +10,7 @@ public:
         for (int i = 0; i < q.size(); ++i) {
             int l = q[i][0], r = q[i][1], k = q[i][2], v = q[i][3];
             for (int j = l; j <= r; j += k) {
-                long long update = (nums[j] * v) % MOD;
-                nums[j] = (int)update;
+                nums[j] = (nums[j] * v) % MOD; 
             }
         }
 
