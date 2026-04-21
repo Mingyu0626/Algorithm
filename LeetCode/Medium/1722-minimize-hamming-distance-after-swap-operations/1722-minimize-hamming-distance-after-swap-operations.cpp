@@ -24,13 +24,13 @@ public:
         int hammingDist = 0;
         for (int i = 0; i < n; ++i) {
             int root = getRoot(i);
-            if (groupCounts[root][target[i]] > 0) {
+            if (0 < groupCounts[root][target[i]]) {
                 groupCounts[root][target[i]]--;
             } else {
                 hammingDist++;
             }
         }
-        
+
         return hammingDist;
     }
 
@@ -38,13 +38,12 @@ public:
         return (parents[a] == a) ? a : parents[a] = getRoot(parents[a]);
     }
     
-    bool tryUnion(int a, int b) {
-        a = getRoot(a);
-        b = getRoot(b);
+    void tryUnion(int a, int b) {
+        a = getRoot(a), b = getRoot(b);
         if (a == b) {
-            return false;
+            return;
         }
         parents[b] = a;
-        return true;
+        return;
     }
 };
