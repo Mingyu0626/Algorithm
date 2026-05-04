@@ -56,6 +56,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
+| [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3643-flip-square-submatrix-vertically/) | Easy |
@@ -98,6 +99,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+| [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -108,6 +110,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
