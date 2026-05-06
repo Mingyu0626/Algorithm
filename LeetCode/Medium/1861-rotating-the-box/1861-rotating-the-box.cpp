@@ -1,11 +1,8 @@
 class Solution {
-private:
-    int m, n;
-    vector<vector<char>> results;
 public:
     vector<vector<char>> rotateTheBox(vector<vector<char>>& boxGrid) {
-        m = boxGrid.size(), n = boxGrid[0].size();
-        results.assign(n, vector<char>(m, ' '));
+        int m = boxGrid.size(), n = boxGrid[0].size();
+        vector<vector<char>> results(n, vector<char>(m));
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 results[j][m - i - 1] = boxGrid[i][j];
