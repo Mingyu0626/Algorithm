@@ -19,6 +19,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0338-counting-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0338-counting-bits/) | Easy |
+| [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0583-delete-operation-for-two-strings/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
@@ -43,6 +44,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0001-two-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
 | [0260-single-number-iii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0260-single-number-iii/) | Medium |
+| [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
@@ -70,6 +72,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0231-power-of-two](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0231-power-of-two/) | Easy |
+| [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
 | [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1342-number-of-steps-to-reduce-a-number-to-zero/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
