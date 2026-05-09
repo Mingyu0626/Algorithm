@@ -20,6 +20,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | ------- | ------- |
 | [0338-counting-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0338-counting-bits/) | Easy |
 | [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [0583-delete-operation-for-two-strings](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0583-delete-operation-for-two-strings/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
@@ -46,6 +47,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
 | [0260-single-number-iii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0260-single-number-iii/) | Medium |
 | [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
+| [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
@@ -114,6 +116,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
@@ -162,6 +165,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2054-two-best-non-overlapping-events/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
@@ -182,6 +186,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
