@@ -53,6 +53,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
@@ -107,6 +108,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0389-find-the-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0389-find-the-difference/) | Easy |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2054-two-best-non-overlapping-events/) | Medium |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
@@ -120,6 +122,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 ## Heap (Priority Queue)
