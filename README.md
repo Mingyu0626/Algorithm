@@ -67,6 +67,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2553-separate-the-digits-in-an-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2553-separate-the-digits-in-an-array/) | Easy |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
@@ -102,6 +103,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
+| [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
@@ -115,6 +117,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2054-two-best-non-overlapping-events/) | Medium |
+| [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
