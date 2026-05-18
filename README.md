@@ -45,6 +45,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
+| [0134-gas-station](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0134-gas-station/) | Medium |
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
@@ -129,6 +130,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0134-gas-station](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0134-gas-station/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0334-increasing-triplet-subsequence/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
