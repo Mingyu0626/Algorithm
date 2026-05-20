@@ -41,6 +41,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [1009-complement-of-base-10-integer](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1009-complement-of-base-10-integer/) | Easy |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1342-number-of-steps-to-reduce-a-number-to-zero/) | Easy |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -71,6 +72,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2553-separate-the-digits-in-an-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2553-separate-the-digits-in-an-array/) | Easy |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
@@ -108,6 +110,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
