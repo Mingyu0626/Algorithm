@@ -48,6 +48,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0134-gas-station](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0134-gas-station/) | Medium |
 | [0136-single-number](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0136-single-number/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0153-find-minimum-in-rotated-sorted-array/) | Medium |
@@ -109,6 +110,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0389-find-the-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0389-find-the-difference/) | Easy |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
@@ -192,6 +194,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3653-xor-after-range-multiplication-queries-i/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -241,6 +244,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0116-populating-next-right-pointers-in-each-node/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -250,6 +254,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0116-populating-next-right-pointers-in-each-node/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
