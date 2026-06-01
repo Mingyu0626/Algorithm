@@ -8,11 +8,7 @@ public:
                 return vector<vector<int>>();
             }
 
-            vector<int> tmp;
-            for (int j = i; j < i + 3; ++j) {
-                tmp.emplace_back(nums[j]);
-            }
-            result.push_back(tmp);
+            result.push_back({nums[i], nums[i + 1], nums[i + 2]});
         }
         return result;
     }
