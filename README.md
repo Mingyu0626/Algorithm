@@ -87,6 +87,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3643-flip-square-submatrix-vertically/) | Easy |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
@@ -141,6 +142,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2966-divide-array-into-arrays-with-max-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2966-divide-array-into-arrays-with-max-difference/) | Medium |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -158,6 +160,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2966-divide-array-into-arrays-with-max-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2966-divide-array-into-arrays-with-max-difference/) | Medium |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -214,6 +217,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2540-minimum-common-value](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -233,6 +237,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [1861-rotating-the-box](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1861-rotating-the-box/) | Medium |
 | [2540-minimum-common-value](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3643-flip-square-submatrix-vertically/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
