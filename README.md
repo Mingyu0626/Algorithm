@@ -75,6 +75,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2054-two-best-non-overlapping-events/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2161-partition-array-according-to-given-pivot](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2553-separate-the-digits-in-an-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2553-separate-the-digits-in-an-array/) | Easy |
@@ -196,6 +197,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0657-robot-return-to-origin](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0657-robot-return-to-origin/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
 | [2069-walking-robot-simulation-ii](https://github.com/Mingyu0626/Algorithm/tree/main/2069-walking-robot-simulation-ii/) | Medium |
+| [2161-partition-array-according-to-given-pivot](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2553-separate-the-digits-in-an-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2553-separate-the-digits-in-an-array/) | Easy |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3653-xor-after-range-multiplication-queries-i/) | Medium |
@@ -239,6 +241,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1861-rotating-the-box/) | Medium |
+| [2161-partition-array-according-to-given-pivot](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2540-minimum-common-value](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
