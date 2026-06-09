@@ -15,6 +15,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2833-furthest-point-from-origin](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2833-furthest-point-from-origin/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
+| [2957-remove-adjacent-almost-equal-characters](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Dynamic Programming
@@ -28,6 +29,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2054-two-best-non-overlapping-events/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [2957-remove-adjacent-almost-equal-characters](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Bit Manipulation
@@ -161,6 +163,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2957-remove-adjacent-almost-equal-characters](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [2966-divide-array-into-arrays-with-max-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2966-divide-array-into-arrays-with-max-difference/) | Medium |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
