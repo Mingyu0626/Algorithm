@@ -2,13 +2,11 @@ class Solution {
 private:
     vector<vector<int>> edges;
     vector<bool> visited;
-    int maxDepth;
     const int MOD = 1000000007;
 public:
     int assignEdgeWeights(vector<vector<int>>& vec) {
         init(vec);
-        maxDepth = getMaxDepth(1, 0);
-        return calcResult();
+        return calcResult(getMaxDepth(1, 0));
     }
 
     void init(vector<vector<int>>& vec) {
@@ -34,11 +32,10 @@ public:
         return updatedDepth;
     }
 
-    int calcResult() {
+    int calcResult(int maxDepth) {
         int result = 1;
         for (int i = 0; i < maxDepth - 1; ++i) {
-            result *= 2;
-            result %= MOD;
+            result = result * 2 % MOD;
         }
         return result;
     }
