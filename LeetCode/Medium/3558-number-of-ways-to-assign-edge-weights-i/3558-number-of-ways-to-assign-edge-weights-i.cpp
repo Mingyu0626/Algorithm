@@ -10,8 +10,8 @@ public:
     }
 
     void init(vector<vector<int>>& vec) {
-        edges.assign(100001, vector<int>());
-        visited.assign(100001, false);
+        edges.assign(vec.size() + 2, vector<int>());
+        visited.assign(vec.size() + 2, false);
         for (int i = 0; i < vec.size(); ++i) {
             int u = vec[i][0], v = vec[i][1];
             edges[u].emplace_back(v);
