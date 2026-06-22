@@ -10,6 +10,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0583-delete-operation-for-two-strings](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0583-delete-operation-for-two-strings/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0657-robot-return-to-origin/) | Easy |
 | [0796-rotate-string](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/0796-rotate-string/) | Easy |
+| [1189-maximum-number-of-balloons](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1189-maximum-number-of-balloons/) | Easy |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
@@ -129,6 +130,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
 | [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
+| [1189-maximum-number-of-balloons](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1189-maximum-number-of-balloons/) | Easy |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2540-minimum-common-value](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2615-sum-of-distances](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
@@ -185,6 +187,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
+| [1189-maximum-number-of-balloons](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1189-maximum-number-of-balloons/) | Easy |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [2833-furthest-point-from-origin](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2833-furthest-point-from-origin/) | Easy |
 ## Enumeration
