@@ -7,12 +7,10 @@ public:
             }
             return a[0] < b[0];
         });
-        
+
         int curL = intervals[0][0], curR = intervals[0][1], removed = 0;
         for (int i = 1; i < intervals.size(); ++i) {
-            if (intervals[i][1] <= curR) {
-                removed++;
-            }
+            removed += intervals[i][1] <= curR;
             curL = intervals[i][0], curR = max(curR, intervals[i][1]);
         }
         return intervals.size() - removed;
