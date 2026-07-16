@@ -10,10 +10,9 @@ public:
         sort(p.begin(), p.end());
 
         long long result = 0;
-        int l = 0, r = n - 1, leftVal = 0, rightVal = INT_MAX;
+        int l = 0, r = n - 1;
         while (l < r) {
-            leftVal = p[l++], rightVal = p[r--];
-            result += gcd(leftVal, rightVal);
+            result += gcd(p[l++], p[r--]);
         }
         return result;
     }
