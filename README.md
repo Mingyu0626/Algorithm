@@ -17,6 +17,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2833-furthest-point-from-origin](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2833-furthest-point-from-origin/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2957-remove-adjacent-almost-equal-characters/) | Medium |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3121-count-the-number-of-special-characters-ii/) | Medium |
 | [3612-process-string-with-special-operations-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3612-process-string-with-special-operations-i/) | Medium |
@@ -122,6 +123,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Mingyu0626/Algorithm/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3754-concatenate-non-zero-digits-and-multiply-by-sum-i/) | Easy |
@@ -190,6 +192,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [2966-divide-array-into-arrays-with-max-difference](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2966-divide-array-into-arrays-with-max-difference/) | Medium |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
