@@ -125,6 +125,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3754-concatenate-non-zero-digits-and-multiply-by-sum-i/) | Easy |
@@ -215,6 +216,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0970-powerful-integers](https://github.com/Mingyu0626/Algorithm/tree/main/0970-powerful-integers/) | Medium |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3345-smallest-divisible-digit-product-i/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
