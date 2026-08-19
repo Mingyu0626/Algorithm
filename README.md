@@ -101,6 +101,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [3074-apple-redistribution-into-boxes](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3074-apple-redistribution-into-boxes/) | Easy |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3429-paint-house-iv](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3429-paint-house-iv/) | Medium |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
@@ -154,6 +155,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [2784-check-if-array-is-good](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/2784-check-if-array-is-good/) | Easy |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3121-count-the-number-of-special-characters-ii/) | Medium |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3731-find-missing-elements](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3731-find-missing-elements/) | Easy |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Easy/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
