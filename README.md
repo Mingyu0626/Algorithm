@@ -67,6 +67,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | [0334-increasing-triplet-subsequence](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0334-increasing-triplet-subsequence/) | Medium |
 | [0396-rotate-function](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0396-rotate-function/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Hard/0410-split-array-largest-sum/) | Hard |
+| [0427-construct-quad-tree](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0427-construct-quad-tree/) | Medium |
 | [0621-task-scheduler](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0621-task-scheduler/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Mingyu0626/Algorithm/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
@@ -222,6 +223,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0427-construct-quad-tree](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0427-construct-quad-tree/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1861-rotating-the-box](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/1861-rotating-the-box/) | Medium |
@@ -251,6 +253,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0427-construct-quad-tree](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0427-construct-quad-tree/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3653-xor-after-range-multiplication-queries-i/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -318,6 +321,7 @@ BOJ, 프로그래머스, LeetCode에 제출후 통과된 알고리즘 코드들�
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0116-populating-next-right-pointers-in-each-node/) | Medium |
+| [0427-construct-quad-tree](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/0427-construct-quad-tree/) | Medium |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Mingyu0626/Algorithm/tree/main/LeetCode/Medium/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
